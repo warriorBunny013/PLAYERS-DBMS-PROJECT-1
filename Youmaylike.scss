@@ -1,0 +1,12 @@
+$white: #fff;
+.youmaylike .news .item .subitem {
+  a {
+    &:hover i {
+      padding-left: 1rem;
+    }
+
+    i {
+      padding-right: 0.5rem;
+    }
+  }
+}

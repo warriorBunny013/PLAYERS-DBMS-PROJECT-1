@@ -1,0 +1,492 @@
+*{
+    padding : 0px;
+    margin : 0px;
+}
+
+.registration_nav{
+    background-color : rgb(240, 236, 236);
+    height : 60px;
+
+}
+.img_reg_nav{
+    padding : 5px;
+    margin: auto;
+    padding-left : 20px;
+}
+.r_head_2{
+    color : rgb(3, 73, 3);
+    /* padding-left : 25rem; */
+    margin-top : 2rem;
+    font-size : 1.5rem;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+.head1, .head2, .head3{
+    margin-top : 25px;
+    padding : 5px;
+    color : green;
+}
+hr{
+    width : 100%;
+    height : 1px;
+    border : none;
+    background-color : green;
+    margin-bottom : 20px;
+    
+}
+.personal_container{
+    display : flex;
+    flex-direction : column;
+    margin : 10px;
+
+
+}
+.one{
+    /* padding-left : 20.5rem; */
+
+    display : flex;
+    align-items : center;
+
+    font-size : 1.15rem;
+    color : rgb(2, 62, 2);
+    font-weight : bold;
+    margin-bottom : 0.5rem;
+
+}
+input[type = "text"]{
+    width : 200px;
+    height : 25px;
+}
+label{
+    width : 225px;
+    
+}
+input[list = "r_gender2"]{
+    width : 200px;
+    height : 25px;
+
+}
+input[list = "r_id2"]{
+    width : 200px;
+    height : 25px;
+}
+.text1{
+    margin-left : 2rem;
+}
+.text2{
+    margin-left : 2rem;
+}
+.text3{
+    margin-left : 2rem;
+}
+.text4{
+    margin-left : 2.1rem;
+}
+.text5{
+    margin-left : 1.9rem;
+}
+.text6{
+    margin-left : 1.9rem;
+}
+.text7{
+    margin-left : 1.9rem;
+}
+
+input[type = "date"]{
+    width : 200px;
+    height : 25px;
+}
+select{
+    width : 200px;
+    height : 25px;
+}
+.two{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-size : 1.15rem;
+    color : rgb(2, 62, 2);
+    font-weight: bold;
+    margin-bottom : 0.5rem;
+
+
+}
+.three{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-size : 1.15rem;
+    color : rgb(2, 62, 2);
+    font-weight: bold;
+    margin-bottom : 0.5rem;
+
+
+}
+.four{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-size : 1.15rem;
+    color : rgb(2, 62, 2);
+    font-weight: bold;
+    margin-bottom : 0.5rem;
+
+
+}
+.five{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-size : 1.15rem;
+    color : rgb(2, 62, 2);
+    font-weight: bold;
+    margin-bottom : 0.5rem;
+
+
+}
+.six{       display : flex;
+    align-items : center;
+    justify-content : center;
+
+    font-size : 1.2rem;
+    color : rgb(2, 62, 2);
+    font-weight: bold;
+    margin-bottom : 1rem;
+
+
+}
+.seven{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-size : 1.2rem;
+    color : rgb(2, 62, 2);
+    font-weight: bold;
+    margin-bottom : 1rem;
+
+}
+input[list = "Nationality"]{
+    height : 25px;
+    width : 200px;
+}
+input[list = "ayd"]{
+    height : 25px;
+    width : 200px;
+}
+input[list = "Sports"]{
+    height : 25px;
+    width : 200px;
+}
+input[list = "ctg"]{
+    height : 25px;
+    width : 200px;
+}
+input[list = "Events"]{
+    height : 25px;
+    width : 200px;
+}
+input[list = "prev"]{
+    height : 25px;
+    width : 200px;
+}
+.one1{       display : flex;
+    align-items : center;
+    justify-content : center;
+
+    font-size : 1.2rem;
+    color : rgb(2, 62, 2);
+    font-weight: bold;
+    margin-bottom : 1rem;
+
+
+}
+.two1{       display : flex;
+    align-items : center;
+    justify-content : center;
+
+    font-size : 1.2rem;
+    color : rgb(2, 62, 2);
+    font-weight: bold;
+    margin-bottom : 1rem;
+
+
+}
+.three1{       display : flex;
+    align-items : center;
+    justify-content : center;
+
+    font-size : 1.2rem;
+    color : rgb(2, 62, 2);
+    font-weight: bold;
+    margin-bottom : 1rem;
+
+
+}
+/* .text8{
+    /* margin-left : 2.2rem; */
+/* }
+.text9{
+    margin-left : 2.1rem;
+}
+.text10{
+    margin-left : 1.8rem;
+} */ */
+.four1{        display : flex;
+    align-items : center;
+    justify-content : center;
+
+    font-size : 1.2rem;
+    color : rgb(2, 62, 2);
+    font-weight: bold;
+    margin-bottom : 1rem;
+
+
+}
+select{
+   margin-left : 1rem;
+}
+.text11{
+    margin-left : 1.5rem;
+}
+.five1{       display : flex;
+    align-items : center;
+    justify-content : center;
+
+    font-size : 1.2rem;
+    color : rgb(2, 62, 2);
+    font-weight: bold;
+    margin-bottom : 1rem;
+
+
+}
+input[type = "textarea"]{
+    height : 25px;
+    width : 200px;
+}
+.text12{
+    margin-left : 1.3rem;
+}
+.r_button{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    margin-top : 3rem;
+    margin-bottom : 1rem;
+
+}
+button[type = "Submit"]{
+    width : 10rem;
+    height : 2.2rem;
+    border : none;
+    background-color: green;
+    border-radius : 0.5rem;
+    font-size : 1.2rem;
+    
+    /* margin-left : 25rem; */
+}
+button[type = "reset"]{
+    width : 10rem;
+    height : 2.2rem;
+    border : 0.1 solid rgb(112, 109, 109);
+    background-color : white;
+    color : green;
+    font-size : 1.2rem;
+    margin-left : 1.2rem;
+    border-radius : 0.5rem;
+    
+
+}
+button[type = "Submit"]:hover{
+    cursor : pointer;
+    
+}
+button[type = "reset"]:hover{
+    cursor : pointer;
+    font-size : 1.3rem;
+    background-color: rgb(228, 220, 220);;
+}
+.ad_1{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-size : 1.2rem;
+    color : rgb(2, 62, 2);
+    font-weight: bold;
+    margin-bottom : 1rem;
+
+
+}
+input[type = "textarea"]{
+    height : 25px;
+    width : 200px;
+}
+
+.ad_1{
+    margin-left : 2rem;
+    height : 30px;
+    width : 200px;
+    
+}
+
+.ad_2{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-size : 1.2rem;
+    color : rgb(2, 62, 2);
+    font-weight: bold;
+    margin-bottom : 1rem;
+
+
+}
+
+.box2{
+    margin-left : 1.5rem;
+}
+
+.box3{
+    margin-left : 1.9rem;
+}
+.box4{
+    margin-left : 1.9rem;
+    height : 30px;
+    width : 200px;
+}
+.box5{
+    margin-left : 2rem;
+}
+
+
+
+
+.box6{
+    margin-left : 2rem;
+    height : 25px;
+    width : 200px;
+}
+
+.box7{
+    margin-left : 2rem;
+    height : 25px;
+    width : 200px;
+}
+.box8{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    height : 25px;
+    width : 200px;
+}
+.box9{
+    margin-left : 2rem;
+    height : 25px;
+    width : 200px;
+}
+
+.box10{
+    /* margin-left : 2rem; */
+    height : 25px;
+    width : 200px;
+}
+.text6{
+    margin-left : 1.5rem;
+    height : 30px;
+    width : 200px;
+
+}
+.text5{
+    height : 30px;
+    width : 200px;
+    margin-left : 2rem;
+}
+.eight{
+    /* padding-left : 23rem; */
+    color : rgb(2, 59, 2);
+    font-weight : bold;
+    font-size : 1.2rem;
+    margin-bottom : 1rem;
+
+}
+.text6{
+    margin-left : 2rem;
+}
+.text9{
+    margin-left : 2rem;
+}
+.r_dob{
+    margin-left : 1.9rem;
+}
+.box5{
+    margin-left : 2.3rem;
+}
+.box2{
+    margin-left : 2.3rem;
+}
+.box3{
+    margin-left : 2.3rem;
+}
+.box4{
+    margin-left : 2.2rem;
+}
+.box6{
+    margin-left : 2.2rem;
+}
+.box7{
+    margin-left : 2.2rem;
+}
+.box8{
+    margin-left : 2.2rem;
+}
+.box9{
+    margin-left : 2.2rem;
+}
+.box10{
+    margin-left : 2.2rem;
+}
+.text8{
+    margin-left : 2rem;
+}
+
+.text9{
+    margin-left : 2rem;
+}
+.text10{
+    margin-left : 2rem;
+}
+.text11{
+    margin-left : 2rem;
+    height : 25px;
+    width : 200px;
+}
+.text12{
+    margin-left : 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

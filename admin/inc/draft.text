@@ -1,0 +1,90 @@
+ <!-- main content -->
+	<div class="container-fluid" id="main-content">
+		<div class="row">
+			<div class="col-lg-10 ms-auto p-4 overflow-hidden">
+				<h3 class="mb-4 ml-2">Event Details</h3>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#events-s">
+                      ADD
+                    </button>
+			<div class="card border-0 shadow-sm mb-4">
+				<div class="card-body">
+				    <div class="table-responsive-md" style="height:450px; overflow-y:scroll;">
+					  <table class="table table-hover border">
+						<thead class="sticky-top">
+							<tr class="bg-dark text-light">
+								<th scope="col">no.</th>
+								<th scope="col">Category</th>
+								<th scope="col">Date</th>
+								<th scope="col">Event_name</th>
+								<th scope="col">Event_name</th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php
+							   
+							   
+							   $q="SELECT * FROM `events` ORDER BY `sr_no` DESC";
+							   $data=mysqli_query($con,$q);
+							   $i=1;
+
+							   while($row=mysqli_fetch_assoc($data)){
+                                $seen='';
+                                
+							   $seen.="<a href='?del=$row[sr_no]' class='btn btn-sm mt-2 rounded-pill btn-danger'>Delete</a>";
+							   
+								echo<<<query
+								    <tr>
+									     <td>$i</td>
+									     <td>$row[event_category]</td>
+									      <td>$row[date]</td>
+										  <td>$row[event_name]</td>
+										  <td>$seen</td>
+
+										  </tr>
+								  
+								query;
+								 $i++;
+							   }
+							?>
+						</tbody>
+					</table>
+	                </div>
+				</div>
+	        </div>
+	    </div>
+	</div>
+
+	</div>
+		<!-- main content -->
+
+        <!--settings modal-->
+ <div class="modal fade" id="events-s" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">General Settings</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+		<div class="mb-3">
+		  <label class="form-label">Category</label>
+		   <input name="event_category" id="event_category_inp" type="text" class="form-control shadow-none">
+	    </div>
+		<div class="mb-3">
+		  <label class="form-label">Date</label>
+		   <input name="date" id="date_inp" type="text" class="form-control shadow-none">
+	    </div>
+		<div class="mb-3">
+		  <label class="form-label">event name</label>
+		   <textarea name="event_name" id="event_name_inp" class="form-control shadow-none" rows="3" style="resize:none;"></textarea>
+	    </div>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="close-btn-events"  class="btn text-secondary shadow-none" data-bs-dismiss="modal">Close</button>
+        <button type="button" id="submit-btn-events" class="btn btn-primary shadow-none">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal end -->

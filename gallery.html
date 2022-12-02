@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #111;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #96f05d;
+  border-radius: 5rem;
+  overflow-x: hidden;
+  /* Does NOT work on Safari */
+  scroll-behavior: smooth;
+  overflow-x: initial !important;
+
+}
+
+body {
+  background: #111;
+
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+    
+.gallery .box-container {
+  -webkit-columns: 3 25rem;
+  columns: 3 25rem;
+  -webkit-column-gap: 1.5rem;
+  column-gap: 1.5rem;
+}
+
+.gallery .box-container .box {
+  margin-bottom: 1rem;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.gallery .box-container .box img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.gallery .box-container .box span {
+  font-size: 1.4rem;
+  color: #aaa;
+}
+
+.gallery .box-container .box h3 {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading span {
+  color: #96f05d;
+  font-size: 2rem;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+</style>
+<body>
+    <section class="gallery" id="gallery">
+        <div class="heading">
+          <span>our gallery</span>
+          <h1>Our players achievements</h1>
+        </div>
+  
+        <div class="box-container">
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <img src="img/sports.jpg" alt="" />
+            <span>Racing</span>
+            <h3>Argentina</h3>
+          </div>
+  
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <img src="img/cycling-wiki.jpg" alt="" />
+            <span>Cycling</span>
+            <h3>greenland</h3>
+          </div>
+  
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <img src="img/soccer.jpg" alt="" />
+            <span>Soccer</span>
+            <h3>alaska</h3>
+          </div>
+  
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <img src="img/racing.jpg" alt="" />
+            <span>Racing</span>
+            <h3>thailand</h3>
+          </div>
+  
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <img src="img/valleyball.jpg" alt="" />
+            <span>Valleyball</span>
+            <h3>India</h3>
+          </div>
+  
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <img src="img/stadium.jpg" alt="" />
+            <span>Football</span>
+            <h3>Brazil</h3>
+          </div>
+  
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <img src="img/jersy.jpg" alt="" />
+            <span>Soccer</span>
+            <h3>iceland</h3>
+          </div>
+  
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <img src="img/cycling.jpg" alt="" />
+            <span>Cycling</span>
+            <h3>alaska</h3>
+          </div>
+  
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <img src="img/jersy.jpg" alt="" />
+            <span>Soccer</span>
+            <h3>Toronto</h3>
+          </div>
+        </div>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+      <script>
+        AOS.init({
+          duration: 800,
+          offset: 150,
+        });
+      </script>
+    
+</body>
+</html>

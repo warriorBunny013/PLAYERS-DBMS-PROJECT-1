@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "Registration_second.css">
+    <style>.one{
+        display: flex;
+        gap:20px;
+
+    }
+    .kuch{
+        display: flex;
+        /* margin-inline:40px; */
+        justify-content: flex-end;
+        align-items: flex-end;
+        width:40rem;
+
+    }</style>
+</head>
+
+<body>
+    <div class = "container_application">
+    <div class = "registration_nav">
+        <img class = "img_reg_nav" src = "logo-2.png" height = "45rem"/>
+    </div>
+    <div class = "r_head_2"><h1>Registration Form</h1></div>
+    <form action = "Insert_Registration.php" method = "post">
+        <div class = "personal_details">
+            <div class = "head1">
+                <h2>Personal Details</h2>
+            </div>
+            <hr>
+        
+            <div class = "personal_container">
+            <div class = "one">
+             <label for="user" class="kuch"><p>Player's Name</p></label>
+             
+             <input type = "text" name = "r_name" class = "text1"></input>
+            </div>
+                <div class = "one">
+             <label for = "father_name" class = "kuch">Father's Name   </label>
+             <input type = "text" name = "r_father_name" class = "text2"></input></div>
+                <div class = "one">
+            <label for = "mother_name" class = "kuch">Mother's Name    </label>
+            <input type = "text" name = "r_mother_name" class = "text3"></input></div>
+                    <div class = "one">
+          <label for = "r_dob" class = "kuch">Participant's Date of Birth    </label>
+        <input type = "date" name = "r_dob" class = "text4"></input></div>
+                        <div class = "one">
+        <label for = "Nationality" class = "kuch">Nationality</label>
+        <select class = "box4" name = "Nationality">
+                                <option value="" disabled selected class = "Options">Select Your Option</option>
+                                <option value="Indian">Indian</option>
+                                <option value = "Japanese"> Japanese</option>
+                                <option value = "USA">American</option>
+                            </select>
+
+                    </div>
+                    <div class = "one">
+                <label for = "Gender" class = "kuch">Gender </label>
+                 <select class = "text5" name = "gender">
+                            <option value="" disabled selected class = "Options">Select Your Option</option>
+                            <option value="Male">Male</option>
+                            <option value = "Female">Female</option>
+                            <option value = "Others">Others</option>
+                        </select>
+                    </div>
+                    <div class = "one">
+                 <label for = "r_id" class = "kuch">Identity Type </label>
+                  <select class = "text6" name = "identity">
+                            <option value="" disabled selected class = "Options">Select Your Option</option>
+                            <option value="AadharCard" >Aadhar Card</option>
+                            <option value = "PanCard"> Pan Card</option>
+                            <option value = "VoterIdCard">Voter Id Card</option>
+                        </select>
+
+                </div>
+
+                <div class = "one">
+                    <label for = "id_no" class = "kuch">Unique Identification Number</label> 
+                    <input type = "text" class = "text9"></input>
+                </div>
+
+                    <div class = "one">
+                 <label for = "Are you Diabetic?" class = "kuch">Are You Diabetic?</label>
+                  <select class = "text7" name = "diabetic">
+                            <option value = "" disabled selected class = "ayd">Select Your Option</option>
+                            <option value = "Yes">Yes</option>
+                            <option value = "NO"> NO</option>
+                        </select>
+
+                </div>
+
+
+        </div>
+        </div>
+        <div class = "Present_address">
+            <div class = "head2">
+                <h2>Present Address</h2>
+            </div>
+            <hr>
+            <div class = "address_container">
+                <div class = "one">
+                    <label for = "Address" class = "kuch">Address</label>
+                    <input type = "text" name = "r_add" class = "box5"></input></div>
+        <div class = "one">
+                <label for = "Locality" class = "kuch">Locality(Optional)   </label>
+                <input type = "text" name = "r_locality" class = "box2"></input></div>
+                <div class = "one">
+                    <label for = "city" class = "kuch">City/Town/Village    </label>
+                    <input type = "text" name = "ctv" class = "box3"></input></div>
+                    <div class = "one">
+                            <label for = "Country" class = "kuch">Country </label>
+                            <select class = "box4" name = "country">
+                                <option value="" disabled selected class = "Options">Select Your Option</option>
+                                <option value="India"  >India</option>
+                                <option value = "Japan" > Japan</option>
+                                <option value = "USA" >USA</option>
+                            </select>
+                            </label>
+
+                            </div>
+                        <div class = "one">
+                            <label for = "State" class = "kuch">State</label>
+                            <input type = "text" name = "r_state" class = "box5"></input></div>
+
+                        <div class = "one">
+                            <label for = "District" class = "kuch"> District</label>
+                            <input type = "text" name = "r_district" class = "box6"> </input>
+                        </div>
+                        <div class = "one">
+                            <label for = "Pin Code" class = "kuch">Pin Code</label>
+                            <input type = "text" name = "r_pin" class = "box7">
+                        </input>
+                        </div>
+                        <div class = "one">
+                            <label for = "Alternate contact number" class = "kuch">
+                                Alternate Contact No.(Optional)</label>
+                                <input type = "text" name = "r_contact" class = "box8">
+                            </input>
+                        </div>
+                        <div class = "one">
+                            <label for = "Email_address" class = "kuch">Email Address</label>
+                            <input type = "email" name = "r_email" class = "box9"></input>
+                        </div>
+                    <div class = "one">
+                        <label for = "Mobile number" class = "kuch">Mobile Number  </label>
+                        <input type = "text" name = "r_mob_num" class = "box10"></input></div>
+
+        </div>
+        </div>
+
+
+        <div class = "apply_for">
+            <div class = "head2">
+            <h2>Apply For</h2>
+            </div>
+            <hr>
+            <div class = "applyfor_container">
+                <div class = "one">
+                        <label for = "Sports" class = "kuch">Sports</label>
+                        <select class = "text8" name = "sports">
+                            <option value="" disabled selected>Select Your Option</option>
+                            <option value = "Basketball" >Basketball</option>
+                            <option value = "Soccer" >Soccer</option>
+                            <option value = "Football" >Football</option>
+                            <option value = "Racing"> Racing</option>
+                            <option value = "Volleyball"> Volleyball</option>
+                            <option value = "Cycling" > Cycling</option>
+                            </select>
+
+
+                </div>
+
+                <div class = "one">
+                        <label for = "Events" class = "kuch">Events</label>
+                        <select class = "text9" name = "events">
+                        <option value = "" disabled selected class = "Options">Select Your Option</option>
+                        <option value = "Tokyo Winter Sportozo">Tokyo Winter Sportozo</option>
+                        <option value = "Mumbai Spring Sportozo">Mumbai Spring Sportozo</option>
+                         <option value = "Japan Summer Sportozo" >Japan Summer Sportozo</option></select>
+
+
+                </div>
+
+                </div>
+                <div class = "one">
+                        <label for = "Category" class = "kuch">Category</label>
+
+                            <select class = "text10" name = "category">
+                                <option value = "" disabled selected >Select Your Option</option>
+                        <option value = "Male" name = "ctg">Male</option>
+                        <option value = "Female" name = "ctg">Female</option>
+                        <option value = "Specially Abled" name = "ctg">Specially Abled</option>
+                        </select>
+
+                </div>
+
+                </div>
+            </div>
+            <div class = "achievement">
+                <div class = "prev_matches_played">
+                    <div class = "head3">
+                        <h2>Additional Information</h2>
+                    </div>
+                    <hr>
+                    <div class = "one">
+                        <label for = "previous" class = "kuch">First Time Participating in sportozo?</label>
+                            <select class = "text11">
+                                <option value="" disabled selected>Select Your Option</option>
+                                <option value="Yes" name = "yes1" >Yes</option>
+                                <option value = "NO" name = "No1"> No</option>
+                            </select>
+                            </label>
+
+                <br></div>
+                <div class = "one">
+                    <label for = "State level participation details" class = "kuch">State Level Participation Details</label>
+                    <input type = "textarea" class = "text12" >
+
+            <br></div>
+
+
+
+
+
+                </div>
+            </div>
+        
+        <div class = "r_button">
+        <button type = "Submit" value = "Submit">Submit</button>
+        <button type = "Reset" value = "Reset">Reset</button>
+    </div>
+
+
+        </div>
+
+
+    </form>
+
+    
+</body>
+</html>

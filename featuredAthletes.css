@@ -1,0 +1,454 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.featured_athletes {
+  background-color: #e6e6e680;
+  padding-bottom: 100px;
+}
+.featured_athletes {
+  padding-top: 7rem;
+}
+.featured_heading {
+  color: black;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+.athletes {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  height: auto;
+  grid-gap: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.Item_box {
+  background-color: white;
+}
+.Medals_won {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.medals {
+  /* margin : 5px; */
+  display: flex;
+  padding: 10px;
+  /* margin-top : 20px; */
+  /* align-content: center; */
+  justify-content: center;
+  align-items: center;
+  /* margin-left :15px; */
+
+  /* height: 24px; */
+  width: 39px;
+  padding: 7px;
+  text-align: center;
+  font-size: 22px;
+  border: 0px solid;
+}
+#b1 {
+  background-color: rgb(246, 204, 127);
+  border-radius: 50%;
+  margin-right: 3px;
+}
+#gold {
+  margin-right: 5px;
+}
+#b2 {
+  background-color: rgb(186, 184, 184);
+  border-radius: 50%;
+  margin-right: 3px;
+}
+#silver {
+  margin-right: 5px;
+}
+#b3 {
+  background-color: #dcb386;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+#bronze {
+  margin-right: 5px;
+}
+.image-boxicon {
+  display: flex;
+}
+.Athletes_image {
+  /* margin-left: auto; */
+  align-items: center;
+  /* padding : 30px; */
+  margin-top: 60px;
+  /* margin-right: auto;
+  margin-left: auto; */
+  padding-left: 38px;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 30px;
+  display: flex;
+  /* flex-direction: row; */
+  border-radius: 50%;
+  /* position : relative;
+  margin-bottom : 40px; */
+  /* height : 200px;
+  width : 200px; */
+}
+.Athletes_image img {
+  border-radius: 50%;
+  /* position : absolute; */
+  /* bottom : 0;
+  left : 0px; */
+}
+.fav_icon {
+  /* align-items:flex-end; */
+  border-radius: 50%;
+}
+.name1 {
+  font-size: 25px;
+  margin-top: 35px;
+  margin-left: 35px;
+  cursor: pointer;
+  /* margin-bottom : 5px; */
+}
+.name1:hover {
+  text-decoration: underline;
+}
+hr {
+  width: 80%;
+  height: 0.3px;
+  margin-left: 35px;
+  margin-right: auto;
+  opacity: 0.5;
+  background-color: rgb(177, 174, 174);
+  /* border: 0 none; */
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.country {
+  display: flex;
+  flex-direction: row;
+  justify-content: space around;
+  font-size: 20px;
+  margin-left: 35px;
+}
+.countryflag {
+  margin-right: 10px;
+}
+.countryname {
+  padding: 8px;
+}
+.part {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 35px;
+}
+/* .imagebox_icon{
+  position : relative; 
+}*/
+.Athletes_image {
+  /* display : block; */
+  z-index: -1;
+}
+.fav_icon {
+  position: absolute;
+  /* right : 100px;
+  top: 30px; */
+  padding: 7px;
+  opacity: 0.5px;
+  bottom: 50px;
+
+  background-color: white;
+}
+
+.Athletes_image {
+  border-radius: 50%;
+  width: auto;
+  overflow: hidden;
+}
+.Athletes_image img {
+  transition: transform 0.5s ease;
+}
+
+.Athletes_image:hover img {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.Main_footer {
+  background-color: #1c3f06;
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  overflow: hidden;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+.Foot_logo {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  margin-left: 120px;
+  background-color: #1c3f06;
+  height: 50px;
+  border: none;
+  padding: 0px;
+}
+button[type="e-mail"] {
+  height: 50px;
+  width: 300px;
+  background-color: white;
+  color: green;
+  margin-right: 0px;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 15px;
+  /* position : absolute; */
+  /* z-index : -1; */
+}
+button[type="e-mail"]:hover {
+  cursor: pointer;
+}
+button[type="Get News"] {
+  height: 50px;
+  width: 209px;
+  background-color: green;
+  /* z-index : 1; */
+  margin-left: 0px;
+  position: absolute;
+  left: 909px;
+  font-size: 20px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+button[type="Get News"]:hover {
+  cursor: pointer;
+}
+.foot_1 li {
+  list-style: none;
+}
+.head_2 {
+  font-size: 15px;
+  padding-left: 20px;
+  padding: 12px;
+}
+.head_1 {
+  font-size: 25px;
+  padding: 20px;
+}
+/* footer  */
+.footer {
+  background-color: #111;
+}
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box {
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .logo {
+  padding-bottom: 1rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.footer .box-container .box p i {
+  padding-right: 0.5rem;
+  color: #96f05d;
+}
+
+.footer .box-container .box .share {
+  padding-top: 1rem;
+}
+
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  border: 0.2rem solid #96f05d;
+  color: #96f05d;
+  margin-right: 0.5rem;
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background: #96f05d;
+  color: #111;
+}
+
+.footer .box-container .box .links {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  display: block;
+}
+
+.footer .box-container .box .links:hover {
+  color: #96f05d;
+}
+
+.footer .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box .links i {
+  padding-right: 0.5rem;
+  color: #96f05d;
+}
+
+.footer .box-container .box form .email {
+  width: 100%;
+  border-radius: 5rem;
+  border: 0.2rem solid #96f05d;
+  background: none;
+  font-size: 1.5rem;
+  text-transform: none;
+  color: #aaa;
+  margin-bottom: 1rem;
+  padding: 1.2rem 1.4rem;
+}
+.footer .box-container .box form .textareahai{
+  width: 100%;
+  border-radius: 5rem;
+  border: 0.2rem solid #96f05d;
+  background: none;
+  font-size: 1.5rem;
+  text-transform: none;
+  color: #aaa;
+  margin-bottom: 1rem;
+  padding: 1.2rem 1.4rem;
+}
+.footer .box-container .box form {
+  padding-inline: 10px;
+}
+
+input[type="email"]:focus {
+  border: 0.2rem solid #96f05d;
+}
+input[type="text"]:focus {
+  border: 0.2rem solid #96f05d;
+}
+.logo-next {
+  height: 45px;
+}
+
+.credit {
+  background: #222;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  color: #aaa;
+}
+
+.credit span {
+  /* color: #29d9d5; */
+  color: #96f05d;
+}
+.footer {
+  background-color: #111;
+  padding: 7rem;
+}
+.box-container .box {
+  background-color: #111;
+}
+
+.btnk {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #96f05d;
+  border: 0.2rem solid #96f05d;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+  text-decoration: none;
+}
+
+.btnk:hover {
+  background: #96f05d;
+  color: #111;
+}
+/* image position correction */
+.image-boxicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Athletes_image {
+  padding: 0;
+  align-self: center;
+  padding-inline: 30px;
+}
+/* banner */
+
+.banner {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url(../img/sports.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url(../img/sports.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.banner .content span {
+  font-size: 2rem;
+  color: #96f05d;
+}
+
+.banner .content h3 {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.banner .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
