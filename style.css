@@ -23,7 +23,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
-
+  width:100%;
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
 }

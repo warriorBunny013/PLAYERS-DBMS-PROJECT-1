@@ -34,6 +34,9 @@ require('admin/inc/essentials.php');
     <!-- bootsrap -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
     <script src="https://kit.fontawesome.com/6fa63ac098.js" crossorigin="anonymous"></script>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
       .alert{
        /* height:41px; */
@@ -47,6 +50,72 @@ require('admin/inc/essentials.php');
         position:fixed;
         top:-77px!important;
       }
+      @media screen and (max-width: 1388px) {
+        body{
+          width:202vh;
+        }
+        #faq{
+  right:20rem;
+ }
+      }
+      @media screen and (max-width: 1110px) {
+        
+        #faq{
+  right:0rem;
+ }
+      }
+      @media screen and (max-width: 918px) {
+        
+        #faq{
+  right:-27rem;
+ }
+      }
+      @media screen and (max-width: 596px) {
+        
+        #faq{
+  right:-53rem;
+ }
+      }
+
+      @media screen and (max-width: 1000px) {
+        
+       .section-cta .container{
+        max-width:400vh;
+       }
+       /* .navbarkacont{
+        visibility: hidden;
+       } */
+     }
+     /* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 389px) {
+  body{
+          width:191vh;
+        }
+ 
+}
+@media screen and (max-width: 330px) {
+  body{
+          width:183vh;
+        }
+ 
+}
+ .navbarkacont{
+  display: flex;
+    flex-wrap: wrap;
+    
+    list-style: none;
+    display: flex;
+    
+    overflow: hidden;
+    /* width: 240vh; */
+    background-color: #fff;
+   
+    gap: 10px;
+    
+
+ }
+
+
       </style>
     <link href="bootstrap.css" rel="stylesheet" />
     <title>players website</title>
@@ -65,7 +134,7 @@ require('admin/inc/essentials.php');
     <header class="home-page">
         <nav class="nav">
         <div class="logo-parent"><img class="logo" src="img/logo-2.png" /></div>
-          
+          <div class="navbarkacont">
           <a href="#home" class="nav-item is-active active" active-color="orange"
             >Home</a
           >
@@ -93,9 +162,15 @@ require('admin/inc/essentials.php');
 <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup">
   sign-up
 </button> -->
+         
           <!-- <a href="dashboard.html" class="nav-item" active-color="rebeccapurple">Dashboard</a> -->
           <span class="nav-indicator"></span>
+          </div>
+          
         </nav>
+        <!-- HAMBURGER MENU STARTS -->
+   
+        
       <!-- Modal -->
 <div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -521,7 +596,7 @@ require('admin/inc/essentials.php');
       </div>
     </section>
     <!-- Featured Events -->
-    <div id="particle-js"></div>
+    
     <section class="Masterfeature" id="featured-events">
       <div class="Featuredevents">
         <div class="featurehead">
@@ -1003,7 +1078,7 @@ require('admin/inc/essentials.php');
    }
 ?>
     <div class="credit">
-      created by <span> Uditi ❤️ Shreya ❤️ Jyotsna </span>
+      created by  ❤️<span> Uditi & Shreya</span>
     </div>
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
